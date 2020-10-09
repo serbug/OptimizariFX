@@ -1,0 +1,303 @@
+/*.button {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: olivedrab;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(olivedrab, olivedrab);
+    -fx-font-size: 13px;
+     -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+.button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+.button:hover{
+
+    -fx-background-color: navy;
+}*/
+/*.menu-bar
+{
+     -fx-background-color: transparent;
+     -fx-font-family: Baumans;
+     -fx-font-size: 14px;
+     -fx-text-fill: #00CCFF;
+}
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+     -fx-background-color: darkgray;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: blue;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: black;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;  4 1 8 1 
+}*/
+
+.button 
+{
+    -fx-border-radius: 5;
+    -fx-font-family: "Source Sans Pro";
+    -fx-background-color : #e8eaee91;
+    -fx-text-fill:black;
+    -fx-font-size : 14 ;
+    -fx-text-style: "Helvetica";
+     -fx-font-weight: bold;
+}
+
+.button:hover{
+    -fx-font-size : 12 ;
+    -fx-text-style: "Helvetica";
+    -fx-background-color : red;
+    -fx-border-radius: 5;
+    -fx-font-family: "Source Sans Pro";
+     -fx-font-weight: bold;
+}
+
+
+/*.button:pressed, .button:default:hover:pressed{
+    -fx-background-color : #33ff33;
+    -fx-text-fill:#177877;
+}
+
+.button:disabled, .button:default:disabled{
+    -fx-background-color : #33ff33;
+    -fx-text-fill:#177877;
+}*/
+
+.button:default:hover{
+    -fx-font-size : 14 ;
+    -fx-text-style: "Helvetica";
+    -fx-background-color : red;
+    -fx-border-radius: 5;
+    -fx-font-family: "Source Sans Pro";
+     -fx-font-weight: bold;
+}
+.menu-bar {
+    -fx-background-color:transparent;
+    -fx-font-family: TRON;
+    -fx-font-size: 14px;
+}
+.menu-bar .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.context-menu {
+    -fx-font-family: TRON;
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+}
+.menu-item .label {
+    -fx-text-fill: lime;
+}
+.menu-item:hover{
+
+    -fx-background-color: darkred;
+}
+.table-view{
+    -fx-background-color: transparent;
+}
+.table-view:empty{
+    -fx-background-color: rgba(53,89,119,0.8);
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color:  rgba(53,89,119,1);  /*linear-gradient(#131313 0%, #424141 100%);*/
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #00CCFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+ -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell{
+    /*     -fx-background-color:  rgba(53,89,119,1);*/
+    -fx-background-color: -fx-table-cell-border-color, #00CCFF ;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;  
+    -fx-background-color: rgba(53,89,119,0.3);
+}
+
+.table-row-cell:odd{
+    /*     -fx-background-color:  rgba(53,89,119,0.7); -fx-table-cell-border-color,*/
+    -fx-background-color: -fx-table-cell-border-color,#00CCFF ;  /*#424242*/
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;   
+    -fx-background-color: rgba(53,89,119,1);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: green;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+/*.table-view .scroll-bar:horizontal:hover .track ,
+
+.table-view .scroll-bar:horizontal:pressed .track ,
+
+.table-view .scroll-bar:vertical:hover .track,
+
+.table-view .scroll-bar:vertical:pressed .track{
+
+    -fx-background-color: derive(#00CCFF,20%);
+    -fx-opacity: 0.2;
+}
+
+
+
+ The main scrollbar **thumb** CSS class on event of "hover" and "pressed" 
+
+.table-view .scroll-bar .thumb:hover,
+
+.table-view .scroll-bar .thumb:pressed{
+
+    -fx-background-color: derive(red,50%);
+
+}*/
+
+.table-view .increment-button:hover ,.table-view .decrement-button:hover {
+
+    -fx-background-color:derive(darkblue,100%);
+
+    -fx-border-color:derive(blue,80%); 
+
+    -fx-padding:10px;
+
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: #00CCFF;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .thumb,
+.table-view > .virtual-flow > .scroll-bar:vertical > .thumb-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .thumb,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .thumb-background {
+    -fx-background-color: #be1d00;
+}/*
+
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+  
+}*/
+
+.root{
+    -fx-background-image: url("cityMain.gif");    /* http://wallpapercave.com/wp/QKgBmix.jpg    https://38.media.tumblr.com/767ef69bf5cbd73e775925d447dc5f7a/tumblr_mzwbsdgjdV1qgbp1jo1_500.gif    https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif*/ 
+    /*-fx-background-size: 790 800;*/
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+    -fx-background-repeat: stretch;	
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+.text-field, .text-field .viewport,.text-field .content {
+
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-style: dashed;
+    -fx-border-color: white;
+    -fx-background-color: rgba(53,89,119,0.8);
+
+}
+#buttonPause{
+    -fx-padding:6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: 
+        #ecebe9,
+        rgba(0,0,0,0.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+        linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,9 9 8 9,9,10,11;
+    -fx-background-radius: 50;
+
+    -fx-font-family: "Helvetica";
+
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+#buttonPause Text{
+
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
+
+}
+#buttonPause:hover{
+    -fx-background-color: darkgreen;
+
+}
+#buttonPlay{
+    -fx-padding:6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: 
+        #ecebe9,
+        rgba(0,0,0,0.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+        linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,9 9 8 9,9,10,11;
+    -fx-background-radius: 50;
+
+    -fx-font-family: "Helvetica";
+
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+
+}
+#buttonPlay Text{
+
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
+
+}
+#buttonPlay:hover{
+    -fx-background-color: darkgreen;
+
+}
+

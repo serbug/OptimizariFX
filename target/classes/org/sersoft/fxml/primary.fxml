@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="884.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sersoft.controller.MainController">
+         <children>
+            <ImageView fitHeight="94.0" fitWidth="225.0" layoutX="307.0" onMouseClicked="#goNext" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/utm-01.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="260.0" layoutY="126.0" text="Universitatea Tehnică a Moldovei" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Label>
+      <Label layoutX="226.0" layoutY="84.0" text="Ministerul Educaţiei al Republicii Moldova">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="159.0" text="Facultatea, Calculatoare, Informatică și Microelectronică">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="301.0" text="RAPORT">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="371.0" text="la Metode si Modele de Calcul II">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="253.0" layoutY="336.0" text="despre lucrarea de laborator Nr. 1">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="415.0" text="Tema: Programarea algoritmilor cu structură liniară">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="714.0" text="A efectuat:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="773.0" text="A verificat:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="583.0" layoutY="714.0" text="Buga Serghei">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="505.0" layoutY="773.0" text="Andrievschi-Baghin Veronica">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="567.0" layoutY="741.0" text="st.gr. TI - 191 F/R">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="578.0" layoutY="800.0" text="lector superior">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="834.0" text="Chişinău 2020">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+         </children>
+      </AnchorPane>

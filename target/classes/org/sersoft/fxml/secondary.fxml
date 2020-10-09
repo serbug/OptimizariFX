@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneSecondary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sersoft.controller.AlgoritmController">
+   <children>
+      <Pane layoutX="10.0" layoutY="12.0" prefHeight="472.0" prefWidth="832.0">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="131.0" layoutY="114.0" text="Algoritmul" textOverrun="CLIP">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font></Label>
+            <Button fx:id="buttonGradientul" layoutX="24.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonGradientul" prefHeight="25.0" prefWidth="137.0" text="Gradientului" />
+            <Button fx:id="buttonHestenes" layoutX="173.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonHestenes" prefHeight="25.0" prefWidth="149.0" text="Hestenes-Stiefel" />
+            <Label id="labelTitle" fx:id="labelTitleAlgoritm" alignment="CENTER" layoutX="470.0" layoutY="112.0" prefHeight="25.0" prefWidth="349.0" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font></Label>
+            <TextField fx:id="textFieldValoareaA" alignment="CENTER" layoutX="99.0" layoutY="170.0" promptText="Variabila a">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="textFieldValoareaB" alignment="CENTER" layoutX="99.0" layoutY="231.0" promptText="Variabila b" />
+            <TextField fx:id="textFieldPasulAlfa" alignment="CENTER" layoutX="99.0" layoutY="292.0" promptText="Pasul ALFA" />
+            <TextField fx:id="textFieldCoordonataX" alignment="CENTER" layoutX="647.0" layoutY="166.0" prefHeight="25.0" prefWidth="59.0" />
+            <TextField fx:id="textFieldFunctiaX" alignment="CENTER" layoutX="646.0" layoutY="224.0" promptText="Functia F(x)" />
+            <TextField fx:id="textFieldIteratii" alignment="CENTER" layoutX="646.0" layoutY="292.0" promptText="Iteratii" />
+            <ImageView fitHeight="76.0" fitWidth="149.0" layoutX="362.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/utm-01.png" />
+               </image></ImageView>
+            <Label layoutX="478.0" layoutY="170.0" text="Punctul are coordonatele">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldCoordonataY" alignment="CENTER" layoutX="736.0" layoutY="165.0" prefHeight="25.0" prefWidth="59.0" />
+            <Label layoutX="629.0" layoutY="168.0" text="X:">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="720.0" layoutY="165.0" text="Y:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
