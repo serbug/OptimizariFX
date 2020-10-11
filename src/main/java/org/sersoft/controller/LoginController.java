@@ -49,7 +49,7 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        String text="W-E-L-C-O-M-E";
+        String text = "M M C  II";
 //       new Thread(() -> {
 //
 //
@@ -70,17 +70,20 @@ public class LoginController implements Initializable {
 
 
     }
+
     @FXML
     private void handlepswPassword(ActionEvent event) throws IOException {
         submit(event);
     }
+
     @FXML
     private void handleSubmit(ActionEvent event) throws IOException {
 
         submit(event);
 
     }
-    void submit(ActionEvent event) throws IOException{
+
+    void submit(ActionEvent event) throws IOException {
         Reflection reflection = new Reflection();
         reflection.setFraction(1);
         reflection.setTopOffset(-2);
@@ -95,15 +98,15 @@ public class LoginController implements Initializable {
 
         if (isValidInput(event)) {
 
-            if (txtUsername.getText().equals("user") && pswPassword.getText().equals("password")) {
+            if (txtUsername.getText().equals("mmc2") && pswPassword.getText().equals("password")) {
 
                 label.setText(" Autentificare cu succes!");
 
                 controllerManager = ControllerManager.getInstance();
 
-
-                home_page_scene.getStylesheets().add("/styles/myDialogs.css");
-                home_page_scene.getStylesheets().add("/styles/MainStyles.css");
+//
+//                home_page_scene.getStylesheets().add("/styles/myDialogs.css");
+//                home_page_scene.getStylesheets().add("/styles/main.css");
 
                 app_stage.hide(); //optional
                 app_stage.setTitle("LABORATOR MMC II");
@@ -162,61 +165,4 @@ public class LoginController implements Initializable {
         }
         return validInput;
     }
-//     @FXML
-//   private void handleKyepress(ActionEvent event) throws IOException{
-//
-//
-//
-//
-//     Reflection reflection = new Reflection();
-//        reflection.setFraction(1);
-//        reflection.setTopOffset(-2);
-//
-//        label.setEffect(reflection);
-//
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
-//        Parent home_page_parent = loader.load();
-//        Scene home_page_scene = new Scene(home_page_parent);
-//        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//
-//
-//        if (isValidInput(event)) {
-//
-//            if (txtUsername.getText().equals("user") && pswPassword.getText().equals("password")) {
-//
-//                label.setText(" Autentificare cu succes!");
-//
-//                controllerManager = ControllerManager.getInstance();
-//                PlayerMusic.playerMain();
-//
-//                home_page_scene.getStylesheets().add("/styles/myDialogs.css");
-//                home_page_scene.getStylesheets().add("/styles/MainStyles.css");
-//
-//                app_stage.hide(); //optional
-//
-//                app_stage.setTitle("PASSWORD GENERATE");
-//                app_stage.setResizable(true);
-//                app_stage.setScene(home_page_scene);
-//                app_stage.show();
-//
-//                MainController controller = loader.getController();
-//                controller.setPrimaryStage(app_stage);
-//                controller.showMain();
-//
-//                ControllerManager.setMainController(controller);
-//
-//            } else {
-//                label.setText(" Autentificare esuata!");
-//
-//                txtUsername.setText("");
-//                pswPassword.setText("");
-//
-//            }
-//
-//        }
-//
-//
-//   }
-
-
 }

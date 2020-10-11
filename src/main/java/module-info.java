@@ -4,6 +4,7 @@ module org.sersoft {
 
     opens org.sersoft to javafx.fxml;
     exports org.sersoft;
+
      opens org.sersoft.controller to javafx.fxml;
     exports org.sersoft.controller;
 

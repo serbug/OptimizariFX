@@ -1,7 +1,0 @@
-org\sersoft\controller\LoginController.class
-org\sersoft\controller\MainController.class
-org\sersoft\controller\AlgoritmController.class
-org\sersoft\MainApp.class
-org\sersoft\model\DateAlgoritm.class
-module-info.class
-org\sersoft\services\ControllerManager.class

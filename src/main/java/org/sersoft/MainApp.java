@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import org.sersoft.controller.LoginController;
 
 import java.io.IOException;
 
@@ -21,6 +20,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/sersoft/fxml/login.fxml"));
+
         //System.out.println(getClass().getResource("fxml/login.fxml"));
         Parent parent = loader.load();
 
@@ -28,12 +28,13 @@ public class MainApp extends Application {
 
 
         Scene scene = new Scene(parent);
-        scene.getStylesheets().add("/styles/labelStyle.css");
-        scene.getStylesheets().add("/styles/myDialogs.css");
-        scene.getStylesheets().add("/styles/LoginStyles.css");
 
 
-       // stage.getIcons().add(new Image("/fxml/iconapp.png"));
+       scene.getStylesheets().add(String.valueOf(this.getClass().getResource("/org/sersoft/fxml/styles/login.css")));
+        stage.getIcons().add(
+                new Image(this.getClass().getResourceAsStream("/org/sersoft/fxml/image/utm-cover.jpg")));
+       // stage.getIcons().add(new Image("/fxml/styles/iconapp.png"));
+      //  stage.getIcons().add(new Image("/iconapp.png"));
         stage.setTitle("LOGIN");
         stage.setResizable(false);
         stage.setScene(scene);
