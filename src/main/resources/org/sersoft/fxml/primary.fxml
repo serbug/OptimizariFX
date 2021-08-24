@@ -6,78 +6,87 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="898.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sersoft.controller.MainController">
-         <children>
-            <ImageView fitHeight="94.0" fitWidth="225.0" layoutX="309.0" onMouseClicked="#goNext" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="309.0">
-               <image>
-                  <Image url="@image/utm-01.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="260.0" layoutY="126.0" text="Universitatea Tehnică a Moldovei" textAlignment="CENTER">
-         <font>
-            <Font name="Times New Roman" size="18.0" />
-         </font></Label>
-      <Label layoutX="226.0" layoutY="84.0" text="Ministerul Educaţiei al Republicii Moldova">
-         <font>
-            <Font name="Times New Roman" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="163.0" layoutY="165.0" text="Facultatea, Calculatoare, Informatică și Microelectronică">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="334.0" layoutY="299.0" text="RAPORT">
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="217.0" layoutY="379.0" text="la disciplina Metode și Modele de Calcul II" AnchorPane.leftAnchor="217.0">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label layoutX="285.0" layoutY="345.0" text="Lucrarea de laborator Nr. 1" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="285.0">
-         <font>
-            <Font name="Times New Roman" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="224.0" layoutY="420.0" text="Tema: Optimizare neliniară fără restricții">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="61.0" layoutY="715.0" text="A efectuat:">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="62.0" layoutY="788.0" text="A verificat:">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="585.0" layoutY="701.0" text="Buga Serghei">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label layoutX="506.0" layoutY="774.0" text="Andrievschi-Baghin Veronica">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label layoutX="569.0" layoutY="728.0" text="st.gr. TI - 191 F/R">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="579.0" layoutY="801.0" text="lector superior">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="326.0" layoutY="851.0" text="Chişinău 2020">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-         </children>
-      </AnchorPane>
+<AnchorPane prefHeight="898.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sersoft.controller.MainController">
+    <ImageView fitHeight="94.0" fitWidth="225.0" layoutX="309.0" onMouseClicked="#goNext" pickOnBounds="true"
+               preserveRatio="true" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="309.0">
+        <Image url="@image/utm-01.png"/>
+    </ImageView>
+    <Label layoutX="260.0" layoutY="126.0" text="Universitatea Tehnică a Moldovei" textAlignment="CENTER">
+        <font>
+    <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="226.0" layoutY="84.0" text="Ministerul Educaţiei al Republicii Moldova">
+        <font>
+          <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="163.0" layoutY="165.0" text="Facultatea, Calculatoare, Informatică și Microelectronică">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="334.0" layoutY="299.0" text="RAPORT">
+        <font>
+          <Font name="System Bold" size="24.0"/>
+        </font>
+    </Label>
+    <Label layoutX="217.0" layoutY="379.0" text="la disciplina Metode și Modele de Calcul II"
+           AnchorPane.leftAnchor="217.0">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="285.0" layoutY="345.0" text="Lucrarea de laborator Nr. 1" AnchorPane.leftAnchor="285.0"
+           AnchorPane.rightAnchor="285.0">
+        <font>
+          <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="224.0" layoutY="420.0" text="Tema: Optimizare neliniară fără restricții">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="61.0" layoutY="715.0" text="A efectuat:">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="62.0" layoutY="788.0" text="A verificat:">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="585.0" layoutY="701.0" text="B. Sergiu">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="506.0" layoutY="774.0" text="Andrievschi-Baghin Veronica">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="569.0" layoutY="728.0" text="st.gr. TI - 191 F/R">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="579.0" layoutY="801.0" text="lector superior">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="326.0" layoutY="851.0" text="Chişinău 2020">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="599.0" layoutY="875.0" text="Continue... Press UTM">
+        <font>
+            <Font size="11.0"/>
+        </font>
+    </Label>
+</AnchorPane>

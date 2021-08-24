@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -117,6 +116,7 @@ public class AlgoritmController implements Initializable {
             while (grad >= EPS) {
 
                 System.out.println("LOG: valoarea grad " + grad);
+
                 ++iter;
 
                 //antigradientul ca directie de deplasare
@@ -125,6 +125,7 @@ public class AlgoritmController implements Initializable {
 
                 //se verifica conditia pag.12 formula 1.11
                 while ((F(Z[0], Z[1]) - F(X[0], X[1])) <= - DELTA * (ALFA * Math.pow(G[0], 2) + Math.pow(G[1], 2))) {
+
                     ALFA *= BETA;
                     Z[0] = X[0] - ALFA * G[0];
                     Z[1] = X[1] - ALFA * G[1];

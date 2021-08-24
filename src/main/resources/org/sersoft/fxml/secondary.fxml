@@ -9,7 +9,7 @@
    <children>
       <Pane fx:id="pane" layoutX="9.0" layoutY="10.0" prefHeight="493.0" prefWidth="833.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="115.0" style="-fx-text-fill: #F5F5F5;" text="Meotda" textAlignment="CENTER" textOverrun="CLIP">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="115.0" style="-fx-text-fill: #F5F5F5;" text="Metoda" textAlignment="CENTER" textOverrun="CLIP">
                <font>
                   <Font name="Times New Roman Bold" size="18.0" />
                </font></Label>
